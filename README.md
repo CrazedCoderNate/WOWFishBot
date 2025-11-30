@@ -1,6 +1,6 @@
 # WOWFishBot
-https://github.com/CrazedCoderNate/WOWFishBot/blob/main/imgs/WowBotBobberLocator.png
-https://github.com/CrazedCoderNate/WOWFishBot/blob/main/imgs/CMD.png
+![Bobber Locator](imgs/WowBotBobberLocator.png)
+![Command Window](imgs/CMD.png)
 A small World of Warcraft fishing helper with three different detection modes:
 
 - `motion_detector.py` – Visual based bot for catching fish. Uses Grayscale, Blur and Contour to detect "Spikes" to catch fish and recast. (NOT RECCOMENDED BOT, BUT SHOULD WORK)
