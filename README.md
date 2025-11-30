@@ -1,10 +1,11 @@
 # WOWFishBot
-
+https://github.com/CrazedCoderNate/WOWFishBot/blob/main/imgs/WowBotBobberLocator.png
+https://github.com/CrazedCoderNate/WOWFishBot/blob/main/imgs/CMD.png
 A small World of Warcraft fishing helper with three different detection modes:
 
-- `motion_detector.py` – pure visual motion detection in a fixed screen region.
-- `audio_detector.py` – monitors audio for spikes and logs them (no clicks).
-- `audio_bobber_bot.py` – combines audio spikes with color-based bobber detection and actually catches fish.
+- `motion_detector.py` – Visual based bot for catching fish. Uses Grayscale, Blur and Contour to detect "Spikes" to catch fish and recast. (NOT RECCOMENDED BOT, BUT SHOULD WORK)
+- `audio_detector.py` – Monitors audio for spikes and logs them (no clicks). - This is for testing and tooling
+- `audio_bobber_bot.py` – Combines audio spikes with color-based bobber detection and actually catches fish. (RECCOMENDED BOT)
 
 **Recommended:** Use `audio_bobber_bot.py`. Pure visual methods can glitch on private servers or with unstable frame rates, while audio spikes from the bobber splash tend to be more reliable.
 
@@ -16,13 +17,13 @@ A small World of Warcraft fishing helper with three different detection modes:
 
 Python 3.9+ is recommended.
 
-Install dependencies (ideally in a virtual environment):
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-The main packages are:
+Requirements:
 
 - `opencv-python` – screen image processing and debug windows.
 - `mss` – efficient screen capture.
@@ -44,6 +45,8 @@ The main packages are:
   - You will need to adjust them based on your monitor layout and game window position.
 - **Multi-monitor setups:**
   - The region can be on any monitor. Just set `left`/`top` correctly (they may be large if the game is on a right-hand monitor).
+- **Audio setup:**
+  - You need to set stereo mix as default recording device so that the bot can listen for the bobber going under water noise.
 
 ---
 
@@ -240,3 +243,6 @@ While running:
   - Flinging the mouse to a screen corner should abort the script.
 - Always test with the bot in a safe environment first.
 - Keep in mind the game’s terms of service and your own risk tolerance when using automation.
+
+
+*Note that these bots were built with the help of AI tools. I still directed them and ensure everything is safe and usable*
